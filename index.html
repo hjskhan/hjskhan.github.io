@@ -81,11 +81,18 @@
                 <!-- Large Button Start -->
                 <div class="large-btn">
                     <div class="content-inner">
-                        <!-- <a class="btn" href="#"><i class="fa fa-download"></i>Resume</a>
-                        <a class="btn" href="#"><i class="fa fa-hands-helping"></i>Hire Me</a> -->
+                        <h2 class="btn" onclick="downloadResume()"><i class="fas fa-download"></i>Resume</h2>
                         <h2 class="btn" href="https://www.github.com/hjskhan"><i class="fab fa-github"></i>GitHub</h2>
-                        <h2 class="btn" href="https://www.linkedin.com/in/hjskhan"><i class="fab fa-linkedin"></i>Linkedin</h2>
-                                        
+                        <!-- <h2 class="btn" href="https://www.github.com/hjskhan"><i class="fab fa-github"></i>GitHub</h2> -->
+                        <!-- <h2 class="btn" href="https://www.linkedin.com/in/hjskhan"><i class="fab fa-linkedin"></i>Linkedin</h2> -->
+                        <script>
+                          function downloadResume() {
+                            var link = document.createElement('a');
+                            link.href = 'img/Resume-updated.pdf';
+                            link.download = 'Resume-updated.pdf';
+                            link.click();
+                          }
+                        </script>                                        
                     </div>
                 </div>
                 <!-- Large Button End -->
